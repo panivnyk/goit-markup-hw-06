@@ -14,7 +14,7 @@
 
 /*-- Main styles -- */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--basic-text-color);
 }
 
@@ -89,7 +89,7 @@ img {
 }
 
 .header-logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -150,7 +150,7 @@ img {
 }
 
 .current::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -193,7 +193,7 @@ img {
 }
 
 .hero-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -454,7 +454,7 @@ img {
 }
 
 .footer-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -551,7 +551,7 @@ img {
 }
 
 .pf-type-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -679,6 +679,7 @@ img {
   width: 528px;
   /* min-height: 150px; */
   min-height: 581px;
+  padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -689,6 +690,67 @@ img {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0.1);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-title-color);
+  margin-bottom: 30px;
+}
+
+.modal-content {
+  margin-bottom: 10px;
+}
+
+.form-input-text {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--basic-text-color);
+}
+
+.modal-input,
+.modal-comment {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.modal-comment {
+  height: 120px;
+  resize: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* margin-bottom: 20px; */
+}
+
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comment:hover,
+.modal-comment:focus,
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .modal-btn-close {
@@ -710,6 +772,11 @@ img {
 
   outline: none;
   cursor: pointer;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
