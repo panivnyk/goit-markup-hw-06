@@ -855,7 +855,7 @@ img {
 }
 
 .modal-check-text {
-  position: relative;
+  /* position: relative; */
   display: flex;
   font-size: 14px;
   line-height: 1.71;
